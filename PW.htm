@@ -17,17 +17,24 @@
         header {
             background-color: #4CAF50;
         }
-        .container {
-            padding: 20px;
-            display: flex;
-        }
+       .container {
+			background-color: #ADD8E6;
+			height: auto;
+			padding: 30px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+}
+
         .section {
-            margin-bottom: 20px;
+			
+            margin-bottom: 1px;
             border: 2px solid #4CAF50;
             padding: 10px;
             border-radius: 5px;
             flex: 1;
-            margin: 10px;
+            margin: 1px;
         }
         footer {
             background-color: #333;
@@ -35,6 +42,16 @@
             bottom: 0;
             width: 100%;
         }
+		nav {
+			display: flex; 
+            justify-content: space-between; 
+            width: 100%;
+		}
+		nav div{
+			display:inline-block;
+			text-align: center;
+			
+			}
     </style>
 </head>
 <body>
@@ -43,24 +60,31 @@
     <h1>Ngao Du VI EN</h1>
 </header>
 <div class="container">
-    <div class="section">
-        <h2>Trang Chủ</h2>
-    </div>
+    <nav>
+       <div><h2><a href="#trangchu">Địa điểm hot!</a></h2></div>
+		<div><h2><a href="#dichvu">Dịch Vụ</a></h2></div>
+		<div><h2><a href="#gioithieu">Giới thiệu</a></h2></div>
+        <div><h2><a href="#lienhe">Liên Hệ</a></h2></div>
+		<div><h2><a href="#khuyenmai">Khuyến mại</a></h2></div>
+	</nav>
+</div>
 
-    <div class="section">
-        <h2>Giới Thiệu</h2>
-    </div>
+<div id="trangchu">
+   
+</div>
 
-    <div class="section">
-        <h2>Dịch Vụ</h2>
-        <div>
-            <h3>Du Lịch Trong Nước</h3>
-        </div>
-    </div>
+<div id="dichvu">
+   
+</div>
+<div id="gioithieu">
+    
+</div>
+<div id="lienhe">
+   
+</div>
 
-    <div class="section">
-        <h2>Liên Hệ</h2>
-    </div>
+<div id="khuyenmai">
+    
 </div>
 
 <footer>
