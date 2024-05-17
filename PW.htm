@@ -1,95 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dịch Vụ Du Lịch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        header, footer {
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-			text-align: center;
+
+        body {
+            font-family: Arial, sans-serif;
         }
+		
         header {
             background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
-       .container {
-			background-color: #ADD8E6;
-			height: auto;
-			padding: 30px;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			flex-wrap: wrap;
-}
-
-        .section {
-			
-            margin-bottom: 1px;
-            border: 2px solid #4CAF50;
-            padding: 10px;
-            border-radius: 5px;
-            flex: 1;
-            margin: 1px;
-        }
-        footer {
-            background-color: #333;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-		nav {
-			display: flex; 
-            justify-content: space-between; 
-            width: 100%;
-		}
-		nav div{
-			display:inline-block;
-			text-align: center;
-			
+		
+		footer {
+			background-color: black;
+			color: white;
+			padding: 10px;
+			text-align:center;
 			}
+        .logo {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .logo i {
+            margin-right: 5px;
+        }
+
+        nav {
+            background-color: #ADD8E6;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type=text] {
+            padding: 10px;
+            margin: 8px 0;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background: #45a049;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Ngao Du VI EN</h1>
+    <div class="logo">
+        <i class="fas fa-globe"></i> Ngao Du VI EN
+    </div>
 </header>
 <div class="container">
     <nav>
-       <div><h2><a href="#trangchu">Địa điểm hot!</a></h2></div>
+       <div><h2><a href="#diadiemhot">Địa điểm hot!</a></h2></div>
 		<div><h2><a href="#dichvu">Dịch Vụ</a></h2></div>
 		<div><h2><a href="#gioithieu">Giới thiệu</a></h2></div>
         <div><h2><a href="#lienhe">Liên Hệ</a></h2></div>
 		<div><h2><a href="#khuyenmai">Khuyến mại</a></h2></div>
 	</nav>
 </div>
-
-<div id="trangchu">
-   
+<div class="search-container">
+    <input type="text" placeholder="Tìm kiếm...">
+    <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
 </div>
+<h1>Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
+<div id="diadiemhot">
+    <div class="section">
+        <h2><i>Hạ Long Bay</i></h2>
+        <p>Với hơn 1.600 hòn đảo và đá vôi hùng vĩ, Hạ Long Bay là một trong những kỳ quan thiên nhiên của thế giới và điểm đến không thể bỏ qua khi du lịch ở Việt Nam.</p>
+    </div>
+    <div class="section">
+        <h2><i>Sapa</i></h2>
+        <p>Nằm ở vùng núi phía Bắc, Sapa thu hút du khách bởi cảnh đẹp hùng vĩ của dãy núi Hoàng Liên Sơn, những ruộng bậc thang xanh mướt và văn hóa độc đáo của các dân tộc thiểu số.</p>
+    </div>
+    <div class="section">
+        <h2><i>Đà Nẵng - Hội An</i></h2>
+        <p>Hai thành phố này gần nhau và cùng nằm ở miền Trung Việt Nam. Đà Nẵng có bãi biển Mỹ Khê nổi tiếng và bán đảo Sơn Trà, trong khi Hội An thu hút du khách bằng kiến trúc cổ và không khí yên bình của phố cổ.</p>
+    </div>
+    <div class="section">
+        <h2><i>Phú Quốc</i></h2>
+        <p>Đảo ngọc Phú Quốc ở phía Nam Việt Nam là một trong những điểm du lịch biển hàng đầu với bãi biển đẹp, rừng núi phong phú và các khu nghỉ dưỡng sang trọng.</p>
+    </div>
+    <div class="section">
+        <h2><i>Huế</i></h2>
+        <p>Là thành phố cổ kính của Việt Nam, Huế đậm chất văn hóa lịch sử với các di tích như Cố đô Huế, các ngôi đền, chùa và lăng tẩm, là điểm đến lý tưởng cho những ai yêu thích lịch sử và kiến trúc cổ.</p>
+    </div>
+</div>
+
 
 <div id="dichvu">
-   
+
 </div>
 <div id="gioithieu">
-    
+
 </div>
 <div id="lienhe">
-   
+
 </div>
 
 <div id="khuyenmai">
-    
+
 </div>
 
 <footer>
     <p>&copy; 2024 Ngao Du VI EN</p>
 </footer>
-
 </body>
 </html>
