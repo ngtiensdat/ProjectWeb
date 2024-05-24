@@ -82,6 +82,16 @@
         nav a:hover {
             color: #4CAF50;
         }
+        #navbar {
+            background-color: #efeaea;
+            color: white;
+            padding: 14px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+            z-index: 1000;
+        }
 		.section{
 			text-align:center;
 			width:50%;
@@ -148,9 +158,34 @@
 		}
 
 		.contact-item span {
-			font-size: 16px;
+			font-size: 50%;
 		}
-		
+		/*thanh tren thanh tim kiem*/
+		.tooltip-container {
+			position: relative;
+			display: inline-block;
+		}
+
+		.tooltip-content {
+			width: 200px;
+			height:auto;
+			display: none;
+			text-align: left;
+			position: absolute;
+			color: #222222;
+			background-color: #CCFFFF;
+			border: 1px solid #FFFFFF;
+			padding: 10px;
+			box-shadow: 100%;
+			z-index: 1;
+		}
+
+		.tooltip-container:hover .tooltip-content {
+			display: block;
+		}
+		.tooltip-trigger {
+			color: #111111;
+		}
     </style>
 </head>
 <body>

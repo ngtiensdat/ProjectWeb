@@ -38,7 +38,7 @@
 			padding-top: 180px; 
 		}
 		footer {
-				background-color: #333;
+				background-color: #e3dfdf;
 				color: #fff;
 				padding: 20px 0;
 				text-align: center;
@@ -67,7 +67,6 @@
             margin-right: 5px;
         }
         nav {
-            background-color: #ADD8E6;
             display: flex;
             justify-content: center;
             padding: 10px 0;
@@ -108,13 +107,13 @@
             padding: 10px 20px;
             margin: 8px 0;
             border: none;
-            background: #4CAF50;
+            background: #32ABD6;
             color: white;
             border-radius: 5px;
             cursor: pointer;
         }
         .search-container button:hover {
-            background: #45a049;
+            background: #32ABD6;
         }
 		.register-container{
 				text-align:center;
@@ -124,7 +123,7 @@
             padding: 10px 20px;
             margin: 8px 0;
             border: none;
-            background: #4CAF50;
+            background: #32ABD6;
             color: white;
             border-radius: 5px;
             cursor: pointer;
@@ -155,9 +154,9 @@
     </style>
 </head>
 <body>
-
+<script type="text/javascript" src="./javascripts/script.js"></script>
 <header id="navbar">
-<div style=" background-color: #4CAF50;">
+<div style=" background-color: #32ABD6;">
     <div class="logo">
         <i class="fa-brands fa-swift"></i> Ngao Du VI EN
     </div>
@@ -165,7 +164,23 @@
 <div>
     <nav>
 		<div><h3><a href="PW.htm">Trang chủ</a></h3></div>
-        <div><h3><a href="#diadiemhot">Địa điểm hot!</a></h3></div>
+        <div class="tooltip-container">
+			<span class="tooltip-trigger"><h3>Địa điểm hot!</h3></span>
+			<div class="tooltip-content">   
+    <nav>
+	<ol>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BA%A1_Long">Hạ Long Bay</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Sa_Pa">Sapa</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%99i_An">Đà Nẵng - Hội An</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c">Phú Quốc</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF">Huế</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh">Ninh Bình</a></li>	
+	</ol>
+	</nav>
+            
+			</div>
+			</div>
+		
 		<div><h3><a href="#dichvu">Dịch Vụ</a></h3></div>
 		<div><h3><a href="intro.htm">Giới thiệu</a></h3></div>
         <div><h3><a href="#lienhe">Liên Hệ</a></h3></div>
@@ -180,22 +195,12 @@
 <main>
 <div class="divT">
 <div class="divL">
-<h3>Tìm hiểu ngay</h3>
-	<nav>
-		<ul>
-			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BA%A1_Long">Hạ Long Bay</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Sa_Pa">Sapa</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%99i_An">Đà Nẵng - Hội An</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c">Phú Quốc</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF">Huế</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh">Ninh Bình</a></li>
-		</ul>
-	</nav>
+	
 </div>
 
 <div class="divM">
 <div id="diadiemhot">
-<h1 style="background-color:#C0C0C0;">Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
+<h1 style="background-color:#f4f2f2;">Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
   
   
   <div class="divT">
@@ -256,7 +261,6 @@
    </div>
 </div>
 <div id="dichvu">
-                <h1 style="background-color:#C0C0C0;">Dịch vụ của chúng tôi</h1>
                 <div class="service-container">
                     <div class="section">
                         <h2>
