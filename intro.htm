@@ -50,6 +50,7 @@
 			display:flex;
 		}
 		.divM {
+			padding-top: 30px;
 			width:100%;
 		}
 		.divL {
@@ -212,143 +213,8 @@
 <main>
 <div class="divT">
 <div class="divL">
-	
 </div>
-
 <div class="divM">
-<div id="diadiemhot">
-<h1 style="background-color:#f4f2f2;">Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
-  
-  
-  <div class="divT">
-	<div class="section">
-        <h2><i>Hạ Long Bay</i></h2>
-		<img src="IMG/imgHaLong.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-        <p>Tour du lịch Hạ Long</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>
-    </div>
-    <div class="section">
-        <h2><i>Sapa</i></h2>
-		<img src="IMG/imgSapa.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-        <p>Tour du lịch Sapa</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>		
-    </div>
-	</div>
-   <div class="divT">
-    <div class="section">
-        <h2><i>Đà Nẵng - Hội An</i></h2>
-		<img src="IMG/imgHoiAn.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-        <p>Tour du lịch Đà Nẵng-Hội An</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>    
-	</div>
-    <div class="section">
-        <h2><i>Phú Quốc</i></h2>
-		<img src="IMG/imgPhuQuoc.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-        <p>Tour du lịch Phú Quốc</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>    
-	</div>
-	</div>
-	<div class="divT">
-    <div class="section">
-        <h2><i>Huế</i></h2>
-		<img src="IMG/imgHue.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-        <p>Tour du lịch Huế</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>    
-	</div>
-	<div class="section">
-		<h2><i>Ninh Bình</i></h2>
-		<img src="IMG/imgNinhBinh.jpg" alt="Hạ Long Bay siêu bay" width="50%">
-		<p>Cực kì tuyệt vời!</p>
-<div class="register-container">
-    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
-</div>	
-	</div>
-   </div>
-</div>
-<div id="dichvu">
-                <h1 style="background-color:#e0dddd;">Dịch vụ của chúng tôi</h1>
-                <div class="service-container">
-                    <div class="section">
-                        <h2>
-                            <li><i>Di chuyển bằng máy bay</i></li>
-                        </h2>
-                        <p>Những chuyến bay tốt nhất<span class="MuiTypography-root MuiTypography-h4"
-                                style="margin-left: 4px; margin-right: 4px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
-                                Chí Minh</span> </p>
-                        <canvas id="myCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
-                        <script>
-                            var c = document.getElementById("myCanvas");
-                            var ctx = c.getContext("2d");
-                            ctx.font = "13px Serif";
-                            ctx.strokeText("Tân Sơn Nhất → Nội Bài", 5, 50);
-                            ctx.strokeText("Khởi hành: 24/05/2024", 10, 70);
-                        </script>
-                    </div>
-
-
-                    <div class="section">
-                        <h2>
-                            <li><i>Di chuyển bằng xe buýt</i></li>
-                        </h2>
-                        <p>Những chuyến xe buýt tốt nhất<span class="MuiTypography-root MuiTypography-h4"
-                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
-                                Chí Minh</span></p>
-                        <canvas id="busCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
-                        <script>
-                            var busCanvas = document.getElementById("busCanvas");
-                            var busCtx = busCanvas.getContext("2d");
-                            busCtx.font = "13px Serif";
-                            busCtx.strokeText("Hồ Chí Minh → Đà Lạt", 10, 50);
-                            busCtx.strokeText("Khởi hành: 25/05/2024", 10, 70);
-                        </script>
-                    </div>
-                    <div class="section">
-                        <h2>
-                            <li><i>Di chuyển bằng tàu hỏa</i></li>
-                        </h2>
-                        <p>Những chuyến tàu tốt nhất<span class="MuiTypography-root MuiTypography-h4"
-                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
-                                Chí Minh</span></p>
-                        <canvas id="trainCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
-                        <script>
-                            var trainCanvas = document.getElementById("trainCanvas");
-                            var trainCtx = trainCanvas.getContext("2d");
-                            trainCtx.font = "13px Serif";
-                            trainCtx.strokeText("Hồ Chí Minh → Hà Nội", 10, 50);
-                            trainCtx.strokeText("Khởi hành: 26/05/2024", 10, 70);
-                        </script>
-                    </div>
-                    <div class="section">
-                        <h2>
-                            <li><i>Thuê xe để tự di chuyển</i></li>
-                        </h2>
-                        <p>Dịch vụ thuê xe khám phá tốt nhất<span class="MuiTypography-root MuiTypography-h4"
-                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
-                                Chí Minh</span></p>
-                        <canvas id="carRentalCanvas" width="150" height="80"
-                            style="border:0.5px solid #b5ffce;"></canvas>
-                        <script>
-                            var carRentalCanvas = document.getElementById("carRentalCanvas");
-                            var carRentalCtx = carRentalCanvas.getContext("2d");
-                            carRentalCtx.font = "13px Serif";
-                            carRentalCtx.strokeText("Thuê xe tự lái", 10, 50);
-                            carRentalCtx.strokeText("Giá: 500,000 VND/ngày", 10, 70);
-                        </script>
-                    </div>
-                </div>
-            </div>
-   
-</div>
 <div id="gioithieu">
 <h1>Giới thiệu chung</h1>
   <p>Du lịch là một trong những hoạt động thú vị và bổ ích nhất mà con người đã thực hiện từ thời xa xưa. Không chỉ đơn thuần là một hình thức giải trí, du lịch còn là một phương thức để chúng ta khám phá thế giới, học hỏi văn hóa, và kết nối với nhau. Ở mỗi quốc gia, mỗi vùng miền, du lịch lại mang một sắc thái riêng, phản ánh bản sắc văn hóa và truyền thống độc đáo của nơi đó.</p>
@@ -367,17 +233,10 @@
 <p>Hãy xách ba lô lên và đi, để khám phá thế giới, khám phá chính mình và trân trọng những giá trị văn hóa độc đáo mà du lịch mang lại.</p>
   <h3>Chúng tôi ở đây để giúp các bạn có những trải nghiệm tuyệt vời với nguồn dịch vụ vô tận và những chuyến đi thú vị mhất!</h3>
 </div>
-<div id="lienhe">
-
-</div>
-
-<div id="khuyenmai">
-
 </div>
 <div class="divR">
 </div>
 </div>
-
 <footer>
      <div class="contact-bar">
             <div class="contact-item">
