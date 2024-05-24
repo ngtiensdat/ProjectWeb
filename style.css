@@ -82,6 +82,16 @@
         nav a:hover {
             color: #4CAF50;
         }
+        #navbar {
+            background-color: #efeaea;
+            color: white;
+            padding: 14px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+            z-index: 1000;
+        }
 		.section{
 			text-align:center;
 			width:50%;
