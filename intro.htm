@@ -6,11 +6,157 @@
     <title>Dịch Vụ Du Lịch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+        }
+		
+        header {
+			width: 100%;
+			background-color: #ADD8E6;
+			color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			padding: 10px 0;
+			
+            color: white;
+            text-align: center;
+			
+        }
+		main {
+			padding-top: 180px; 
+		}
+		footer {
+				background-color: #e3dfdf;
+				color: #fff;
+				padding: 20px 0;
+				text-align: center;
+				
+				width: 100%;
+				bottom: 0;
+			}
+		.divT{
+			display:flex;
+		}
+		.divM {
+			width:100%;
+		}
+		.divL {
+			width:20%;
+		}
+		.divR {
+			width:20%;
+		}
+			
+        .logo {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .logo i {
+            margin-right: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+		.section{
+			text-align:center;
+			width:50%;
+			border: 1px solid #339966;
+			border-radius: 20px;
+			margin-top:5px;
+			margin-left: 10px;
+			margin-right: 10px
+		
+		}
+		
+        .search-container {
+            text-align: center;
+        }
+        .search-container input[type=text] {
+            padding: 10px;
+            margin: 8px 0;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            background: #32ABD6;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background: #32ABD6;
+        }
+		.register-container{
+				text-align:center;
+				margin-bottom: 20px;		
+		}
+		.register-container button {
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            background: #32ABD6;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		/* Liên hệ ở footer */
+		.contact-bar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.contact-item img {
+			width: 24px;
+			height: 24px;
+		}
+
+		.contact-item span {
+			font-size: 16px;
+		}
+		
+    </style>
 </head>
 <body>
-
+<script type="text/javascript" src="./javascripts/script.js"></script>
 <header id="navbar">
-<div style=" background-color: #0d9656;">
+<div style=" background-color: #32ABD6;">
     <div class="logo">
         <i class="fa-brands fa-swift"></i> Ngao Du VI EN
     </div>
@@ -18,8 +164,41 @@
 <div>
     <nav>
 		<div><h3><a href="PW.htm">Trang chủ</a></h3></div>
-        <div><h3><a href="#diadiemhot">Địa điểm hot!</a></h3></div>
-		<div><h3><a href="#dichvu">Dịch Vụ</a></h3></div>
+        <div class="tooltip-container">
+			<span class="tooltip-trigger"><h3>Địa điểm hot!</h3></span>
+			<div class="tooltip-content">   
+    
+	<ol>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BA%A1_Long">Hạ Long Bay</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Sa_Pa">Sapa</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%99i_An">Đà Nẵng - Hội An</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c">Phú Quốc</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF">Huế</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh">Ninh Bình</a></li>	
+	</ol>
+	
+	
+            
+			</div>
+			</div>
+		
+		<div class="tooltip-container">
+			<span class="tooltip-trigger"><h3>Dịch vụ</h3></span>
+			<div class="tooltip-content">   
+    
+	<ol>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BA%A1_Long">Di chuyển</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Sa_Pa">Ăn uống</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%99i_An">Ngủ nghỉ</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c">Vui chơi</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF">Chụp ảnh</a></li>
+			<li><a href="https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh">Hướng dẫn viên</a></li>	
+	</ol>
+	
+	
+            
+			</div>
+			</div>
 		<div><h3><a href="intro.htm">Giới thiệu</a></h3></div>
         <div><h3><a href="#lienhe">Liên Hệ</a></h3></div>
 		<div><h3><a href="#khuyenmai">Khuyến mại</a></h3></div>
@@ -33,20 +212,143 @@
 <main>
 <div class="divT">
 <div class="divL">
-<h3>Tìm hiểu ngay</h3>
-	<nav>
-		<ul>
-			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BA%A1_Long">Hạ Long Bay</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Sa_Pa">Sapa</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%99i_An">Đà Nẵng - Hội An</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Ph%C3%BA_Qu%E1%BB%91c">Phú Quốc</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Hu%E1%BA%BF">Huế</a></li>
-			<li><a href="https://vi.wikipedia.org/wiki/Ninh_B%C3%ACnh">Ninh Bình</a></li>
-		</ul>
-	</nav>
+	
 </div>
 
 <div class="divM">
+<div id="diadiemhot">
+<h1 style="background-color:#f4f2f2;">Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
+  
+  
+  <div class="divT">
+	<div class="section">
+        <h2><i>Hạ Long Bay</i></h2>
+		<img src="IMG/imgHaLong.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+        <p>Tour du lịch Hạ Long</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>
+    </div>
+    <div class="section">
+        <h2><i>Sapa</i></h2>
+		<img src="IMG/imgSapa.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+        <p>Tour du lịch Sapa</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>		
+    </div>
+	</div>
+   <div class="divT">
+    <div class="section">
+        <h2><i>Đà Nẵng - Hội An</i></h2>
+		<img src="IMG/imgHoiAn.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+        <p>Tour du lịch Đà Nẵng-Hội An</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>    
+	</div>
+    <div class="section">
+        <h2><i>Phú Quốc</i></h2>
+		<img src="IMG/imgPhuQuoc.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+        <p>Tour du lịch Phú Quốc</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>    
+	</div>
+	</div>
+	<div class="divT">
+    <div class="section">
+        <h2><i>Huế</i></h2>
+		<img src="IMG/imgHue.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+        <p>Tour du lịch Huế</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>    
+	</div>
+	<div class="section">
+		<h2><i>Ninh Bình</i></h2>
+		<img src="IMG/imgNinhBinh.jpg" alt="Hạ Long Bay siêu bay" width="50%">
+		<p>Cực kì tuyệt vời!</p>
+<div class="register-container">
+    <button type="submit"><i class="fa-regular fa-hand-pointer"></i> Đăng ký</button>
+</div>	
+	</div>
+   </div>
+</div>
+<div id="dichvu">
+                <h1 style="background-color:#e0dddd;">Dịch vụ của chúng tôi</h1>
+                <div class="service-container">
+                    <div class="section">
+                        <h2>
+                            <li><i>Di chuyển bằng máy bay</i></li>
+                        </h2>
+                        <p>Những chuyến bay tốt nhất<span class="MuiTypography-root MuiTypography-h4"
+                                style="margin-left: 4px; margin-right: 4px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
+                                Chí Minh</span> </p>
+                        <canvas id="myCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
+                        <script>
+                            var c = document.getElementById("myCanvas");
+                            var ctx = c.getContext("2d");
+                            ctx.font = "13px Serif";
+                            ctx.strokeText("Tân Sơn Nhất → Nội Bài", 5, 50);
+                            ctx.strokeText("Khởi hành: 24/05/2024", 10, 70);
+                        </script>
+                    </div>
+
+
+                    <div class="section">
+                        <h2>
+                            <li><i>Di chuyển bằng xe buýt</i></li>
+                        </h2>
+                        <p>Những chuyến xe buýt tốt nhất<span class="MuiTypography-root MuiTypography-h4"
+                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
+                                Chí Minh</span></p>
+                        <canvas id="busCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
+                        <script>
+                            var busCanvas = document.getElementById("busCanvas");
+                            var busCtx = busCanvas.getContext("2d");
+                            busCtx.font = "13px Serif";
+                            busCtx.strokeText("Hồ Chí Minh → Đà Lạt", 10, 50);
+                            busCtx.strokeText("Khởi hành: 25/05/2024", 10, 70);
+                        </script>
+                    </div>
+                    <div class="section">
+                        <h2>
+                            <li><i>Di chuyển bằng tàu hỏa</i></li>
+                        </h2>
+                        <p>Những chuyến tàu tốt nhất<span class="MuiTypography-root MuiTypography-h4"
+                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
+                                Chí Minh</span></p>
+                        <canvas id="trainCanvas" width="150" height="80" style="border:0.5px solid #b5ffce;"></canvas>
+                        <script>
+                            var trainCanvas = document.getElementById("trainCanvas");
+                            var trainCtx = trainCanvas.getContext("2d");
+                            trainCtx.font = "13px Serif";
+                            trainCtx.strokeText("Hồ Chí Minh → Hà Nội", 10, 50);
+                            trainCtx.strokeText("Khởi hành: 26/05/2024", 10, 70);
+                        </script>
+                    </div>
+                    <div class="section">
+                        <h2>
+                            <li><i>Thuê xe để tự di chuyển</i></li>
+                        </h2>
+                        <p>Dịch vụ thuê xe khám phá tốt nhất<span class="MuiTypography-root MuiTypography-h4"
+                                style="margin-left: 8px; margin-right: 8px; color: rgb(255, 51, 102); cursor: pointer;">Hồ
+                                Chí Minh</span></p>
+                        <canvas id="carRentalCanvas" width="150" height="80"
+                            style="border:0.5px solid #b5ffce;"></canvas>
+                        <script>
+                            var carRentalCanvas = document.getElementById("carRentalCanvas");
+                            var carRentalCtx = carRentalCanvas.getContext("2d");
+                            carRentalCtx.font = "13px Serif";
+                            carRentalCtx.strokeText("Thuê xe tự lái", 10, 50);
+                            carRentalCtx.strokeText("Giá: 500,000 VND/ngày", 10, 70);
+                        </script>
+                    </div>
+                </div>
+            </div>
+   
+</div>
 <div id="gioithieu">
 <h1>Giới thiệu chung</h1>
   <p>Du lịch là một trong những hoạt động thú vị và bổ ích nhất mà con người đã thực hiện từ thời xa xưa. Không chỉ đơn thuần là một hình thức giải trí, du lịch còn là một phương thức để chúng ta khám phá thế giới, học hỏi văn hóa, và kết nối với nhau. Ở mỗi quốc gia, mỗi vùng miền, du lịch lại mang một sắc thái riêng, phản ánh bản sắc văn hóa và truyền thống độc đáo của nơi đó.</p>
@@ -65,6 +367,12 @@
 <p>Hãy xách ba lô lên và đi, để khám phá thế giới, khám phá chính mình và trân trọng những giá trị văn hóa độc đáo mà du lịch mang lại.</p>
   <h3>Chúng tôi ở đây để giúp các bạn có những trải nghiệm tuyệt vời với nguồn dịch vụ vô tận và những chuyến đi thú vị mhất!</h3>
 </div>
+<div id="lienhe">
+
+</div>
+
+<div id="khuyenmai">
+
 </div>
 <div class="divR">
 </div>
