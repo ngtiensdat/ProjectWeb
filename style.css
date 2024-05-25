@@ -101,7 +101,17 @@
 			margin-left: 10px;
 			margin-right: 10px
         }
-		
+		.container {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.item {
+		    padding: 0px;
+		    margin: 10px;
+		    text-align: center;
+		}
+
         .search-container {
             text-align: center;
         }
