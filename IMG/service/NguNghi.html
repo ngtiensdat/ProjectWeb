@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Du Lịch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+        }
+		
+        header {
+			width: 100%;
+			background-color: #ADD8E6;
+			color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			padding: 10px 0;
+			
+            color: white;
+            text-align: center;
+			
+        }
+		main {
+			padding-top: 180px; 
+		}
+		footer {
+				background-color: #e3dfdf;
+				color: #fff;
+				padding: 20px 0;
+				text-align: center;
+				
+				width: 100%;
+				bottom: 0;
+			}
+		.divT{
+			display:flex;
+		}
+		.divM {
+			padding-top: 30px;
+			width:100%;
+		}
+		.divL {
+			width:20%;
+		}
+		.divR {
+			width:20%;
+		}
+			
+        .logo {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .logo i {
+            margin-right: 5px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+		.section{
+			text-align:center;
+			width:50%;
+			border: 1px solid #339966;
+			border-radius: 20px;
+			margin-top:5px;
+			margin-left: 10px;
+			margin-right: 10px
+		
+		}
+		
+        .search-container {
+            text-align: center;
+        }
+        .search-container input[type=text] {
+            padding: 10px;
+            margin: 8px 0;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            background: #32ABD6;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background: #32ABD6;
+        }
+		.register-container{
+				text-align:center;
+				margin-bottom: 20px;		
+		}
+		.register-container button {
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            background: #32ABD6;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		/* Liên hệ ở footer */
+		.contact-bar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.contact-item img {
+			width: 24px;
+			height: 24px;
+		}
+
+		.contact-item span {
+			font-size: 16px;
+		}
+		
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="./javascripts/script.js"></script>
+<header id="navbar">
+<div style=" background-color: #32ABD6;">
+    <div class="logo">
+        <i class="fa-brands fa-swift"></i> Ngao Du VI EN
+    </div>
+</div>
+<div>
+    <nav>
+		<div><h3><a href="../PW.html">Trang chủ</a></h3></div>
+        <div class="tooltip-container">
+			<span class="tooltip-trigger"><h3>Địa điểm hot!</h3></span>
+			<div class="tooltip-content">   
+<ol>
+			<li><a href="../location/HaLong.html">Hạ Long Bay</a></li>
+			<li><a href="../location/Sapa.html">Sapa</a></li>
+			<li><a href="../location/HoiAn.html">Đà Nẵng - Hội An</a></li>
+			<li><a href="../location/PhuQuoc.html">Phú Quốc</a></li>
+			<li><a href="../location/Hue.html">Huế</a></li>
+			<li><a href="../location/NinhBinh.html">Ninh Bình</a></li>	
+	</ol>   
+			</div>
+			</div>
+		
+		<div class="tooltip-container">
+			<span class="tooltip-trigger"><h3>Dịch vụ</h3></span>
+			<div class="tooltip-content">   
+    
+	<ol>
+			<li><a href="service/DiChuyen.html">Di chuyển</a></li>
+			<li><a href="service/AnUong.html">Ăn uống</a></li>
+			<li><a href="service/NguNghi.html">Ngủ nghỉ</a></li>
+			<li><a href="service/VuiChoi.html">Vui chơi</a></li>
+			<li><a href="service/ChupAnh.html">Chụp ảnh</a></li>
+			<li><a href="service/HDV.html">Hướng dẫn viên</a></li>	
+	</ol> 
+			</div>
+			</div>
+		<div><h3><a href="../intro/intro.html">Giới thiệu</a></h3></div>
+         <div class="tooltip-container">
+			<div  class="item"><div class="tooltip-trigger"><h3>Liên hệ</h3></div></div>
+			<div class="tooltip-content">   
+    
+	<ol>
+			<li><a href="../lienhe/DatLich.html">Đặt lịch</a></li>
+			<li><a href="../lienhe/GopY.html">Góp ý</a></li>
+	
+	</ol>
+	
+	
+            
+			</div>
+			</div>
+		<div><h3><a href="#khuyenmai">Khuyến mại</a></h3></div>
+	</nav>
+</div>
+<div class="search-container">
+    <input type="text" placeholder="Tìm kiếm...">
+    <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+</div>
+</header>
+<main>
+<div class="divT">
+<div class="divL">
+</div>
+<div class="divM">
+<p>NguNghi</p>
+</div>
+<div class="divR">
+</div>
+</div>
+<footer>
+     <div class="contact-bar">
+            <div class="contact-item">
+			<img src="IMG/imgPhone.jpg" alt="Phone">
+                <span style="color:#0000FF">999 999 999</span>
+            </div>
+            <div class="contact-item">
+			<img src="IMG/imgMail.jpg">
+                <span style="color:#0000FF">meo meo.com</span>
+            </div>
+            <div class="contact-item">
+			<img src="IMG/imgArea.jpg">
+                <span style="color:#0000FF">thiên đình</span>
+            </div>
+        </div>
+</footer>
+</main>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-50px";
+        } else {
+            navbar.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+</body>
+</html>
