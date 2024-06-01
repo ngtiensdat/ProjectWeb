@@ -28,7 +28,7 @@
 			
         }
 		main {
-			padding-top: 180px; 
+			padding-top: 1px; 
 		}
 		footer {
 				background-color: #333;
@@ -224,8 +224,7 @@
 			
         }
 		
-		/* chat */
-					#chat-bubble {
+		#chat-bubble {
 			position: fixed;
 			bottom: 20px;
 			right: 20px;
@@ -237,6 +236,7 @@
 			height: 50px; 
 		}
 
+		/*Zalo chat box */
 		#zalo-chat-box {
 			position: fixed;
 			bottom: 70px;
@@ -272,41 +272,6 @@
 			padding: 10px;
 		}
 
-
-		main {
-			padding-top: 1px; 
-		}
-		footer {
-				background-color: #e3dfdf;
-				color: #fff;
-				padding: 20px 0;
-				text-align: center;
-				
-				width: 100%;
-				bottom: 0;
-			}
-		.divT{
-			width:100%;
-			display:flex;
-		}
-		.divM {
-			padding-top: 30px;
-			width:100%;
-		}
-		.divL {
-			width:20%;
-		}
-		.divR {
-			width:20%;
-		}
-			
-        .logo {
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
-        .logo i {
-            margin-right: 5px;
-        }
         nav {
             display: flex;
             justify-content: center;

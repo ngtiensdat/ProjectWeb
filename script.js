@@ -22,6 +22,15 @@
 				chatBox.style.display = "none";
 			}
 		}
+// zalo
+	function toggleChatBox() {
+		const chatBox = document.getElementById("zalo-chat-box");
+		if (chatBox.style.display === "none" || chatBox.style.display === "") {
+			chatBox.style.display = "block";
+		} else {
+			chatBox.style.display = "none";
+		}
+	}
 
 /* video
 		let currentVideoIndex = 0;
