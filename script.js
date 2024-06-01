@@ -10,19 +10,7 @@
 				tooltipContent.style.display = 'none';
 			});
 		});
-		// chat
-		function openZalo() {
-			window.location.href = "https://chat.zalo.me/"; // Thay "your-zalo-id" vaofo 
-		}
-		function toggleChatBox() {
-			const chatBox = document.getElementById("zalo-chat-box");
-			if (chatBox.style.display === "none" || chatBox.style.display === "") {
-				chatBox.style.display = "block";
-			} else {
-				chatBox.style.display = "none";
-			}
-		}
-// zalo
+	// zalo
 	function toggleChatBox() {
 		const chatBox = document.getElementById("zalo-chat-box");
 		if (chatBox.style.display === "none" || chatBox.style.display === "") {
@@ -84,3 +72,32 @@
         });
     });
 </script>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-50px";
+        } else {
+            navbar.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+document.addEventListener("DOMContentLoaded", function() {
+    var chatBubble = document.getElementById("chat-bubble");
+    var chatBox = document.getElementById("zalo-chat-box");
+    var closeChat = document.getElementById("close-chat");
+
+    chatBubble.addEventListener("click", function() {
+        chatBox.style.display = "block";
+    });
+
+    closeChat.addEventListener("click", function() {
+        chatBox.style.display = "none";
+    });
+});
