@@ -61,6 +61,11 @@
         .logo i {
             margin-right: 5px;
         }
+		.equal-size {
+		width: 200px; 
+		height: 200px; 
+		object-fit: cover;
+		}
         nav {
             background-color: #ADD8E6;
             display: flex;
