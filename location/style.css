@@ -415,3 +415,44 @@ h1 {
     font-size: 14px;
     color: #777;
 }
+/*Box đặt phòng */
+.booking-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-box form {
+    display: grid;
+    gap: 10px;
+}
+
+.booking-box label {
+    font-weight: bold;
+}
+
+.booking-box input,
+.booking-box select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.booking-box button {
+    padding: 10px 20px;
+    background-color: #32ABD6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-box button:hover {
+    background-color: #4CAF50;
+}
