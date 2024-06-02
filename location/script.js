@@ -91,3 +91,13 @@
         lastScrollTop = scrollTop;
     });
 </script>
+// Giỏ hàng
+const cart = document.getElementById('cart');
+const closeCartBtn = document.getElementById('close-cart');
+document.getElementById('cart-icon').addEventListener('click', function() {
+    cart.style.display = 'block';
+});
+
+closeCartBtn.addEventListener('click', function() {
+    cart.style.display = 'none';
+});
