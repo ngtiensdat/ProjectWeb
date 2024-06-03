@@ -64,22 +64,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
         serviceResults.style.display = "block";
     });
+	// ảnh
 
-    // Chat box
-    function toggleChatBox() {
-        const chatBox = document.getElementById("zalo-chat-box");
-        if (chatBox.style.display === "none" || chatBox.style.display === "") {
-            chatBox.style.display = "block";
-        } else {
-            chatBox.style.display = "none";
-        }
-    }
-
-    document.getElementById('cart-icon').addEventListener('click', function() {
-        document.getElementById('cart').style.display = 'block';
-    });
-
-    document.getElementById('close-cart').addEventListener('click', function() {
-        document.getElementById('cart').style.display = 'none';
-    });
-});

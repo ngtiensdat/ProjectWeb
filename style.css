@@ -255,55 +255,7 @@ nav a:hover {
 }
 
 /* Video Slider */
-.video-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-.video-container video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 24px;
-    transition: background-color 0.3s ease;
-}
 
-.prev {
-    left: 300px;
-}
-
-.next {
-    right: 300px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-}
 /* Contact Section */
 .lienhe {
     max-width: 1000px;

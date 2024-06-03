@@ -20,36 +20,8 @@
 		}
 	}
 
-/* video
-		let currentVideoIndex = 0;
-		const videos = ["Video/test01.mp4", "Video/test02.mp4", "Video/test03.mp4"]; // Danh sách các video
+/* video */
 
-		function showVideo(index) {
-			const videoContainer = document.querySelector('.video-container video');
-			videoContainer.src = videos[index];
-			videoContainer.load();
-			currentVideoIndex = index;
-		}
-
-		function prevVideo() {
-			if (currentVideoIndex > 0) {
-				currentVideoIndex--;
-			} else {
-				currentVideoIndex = videos.length - 1;
-			}
-			showVideo(currentVideoIndex);
-		}
-
-		function nextVideo() {
-			if (currentVideoIndex < videos.length - 1) {
-				currentVideoIndex++;
-			} else {
-				currentVideoIndex = 0;
-			}
-			showVideo(currentVideoIndex);
-		}
-		showVideo(currentVideoIndex);
-		*/
 // trỏ
 <script>
     document.addEventListener("DOMContentLoaded", function() {

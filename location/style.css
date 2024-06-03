@@ -111,6 +111,7 @@ nav a:hover {
     padding: 10px;
     margin: 20px;
     text-align: center;
+	border-radius: 10px;
 }
 
 /* Search Container */
@@ -206,105 +207,28 @@ nav a:hover {
 .tooltip-trigger {
     color: #111111;
 }
-
-/* Zalo Chat */
-#chat-bubble {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
+/*introduction */
+.introduction-img{
+	border-radius: 10px;
 }
-
-#chat-bubble img {
-    width: 50px;
-    height: 50px; 
-}
-
-#zalo-chat-box {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    width: 300px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    display: none;
-}
-
-#zalo-chat-box .chat-box-header {
-    background-color: #0078FF;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.introduction-section {
     position: relative;
-}
-
-#zalo-chat-box .chat-box-header button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#zalo-chat-box .chat-box-content {
-    padding: 10px;
-}
-
-/* Video Slider */
-.video-slider {
+    color: #000000;
+    text-align: left;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
-.video-container {
+.introduction-content {
     position: relative;
-    width: 100%;
+    z-index: 2;
     max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+    padding: 20px;
+    background-color: #CCFFFF;
+    border-radius: 10px;
 }
-.video-container video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 24px;
-    transition: background-color 0.3s ease;
-}
+/* Di chuyen img */
 
-.prev {
-    left: 300px;
-}
-
-.next {
-    right: 300px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-}
 /* Contact Section */
 .lienhe {
     max-width: 1000px;
@@ -345,12 +269,6 @@ h1 {
     object-fit: cover;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .video-container {
-        width: 90vw; 
-    }
-}
 /* Chân */
 .site-footer {
     background-color: #ffffff;
