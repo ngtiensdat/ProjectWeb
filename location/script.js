@@ -1,81 +1,24 @@
-		document.addEventListener("DOMContentLoaded", function() {
-			const tooltipTrigger = document.querySelector('.tooltip-trigger');
-			const tooltipContent = document.querySelector('.tooltip-content');
+document.addEventListener("DOMContentLoaded", function() {
+    // Tooltip
+    const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
 
-			tooltipTrigger.addEventListener('mouseover', function() {
-				tooltipContent.style.display = 'block';
-			});
+    tooltipTriggers.forEach(trigger => {
+        trigger.addEventListener("mouseenter", function() {
+            const tooltipContent = this.nextElementSibling;
+            tooltipContent.classList.add("show");
+        });
 
-			tooltipTrigger.addEventListener('mouseout', function() {
-				tooltipContent.style.display = 'none';
-			});
-		});
-		// chat
-		function openZalo() {
-			window.location.href = "https://chat.zalo.me/"; // Thay "your-zalo-id" vaofo 
-		}
-		function toggleChatBox() {
-			const chatBox = document.getElementById("zalo-chat-box");
-			if (chatBox.style.display === "none" || chatBox.style.display === "") {
-				chatBox.style.display = "block";
-			} else {
-				chatBox.style.display = "none";
-			}
-		}
+        trigger.addEventListener("mouseleave", function() {
+            const tooltipContent = this.nextElementSibling;
+            tooltipContent.classList.remove("show");
+        });
 
-/* video
-		let currentVideoIndex = 0;
-		const videos = ["Video/test01.mp4", "Video/test02.mp4", "Video/test03.mp4"]; // Danh sách các video
-
-		function showVideo(index) {
-			const videoContainer = document.querySelector('.video-container video');
-			videoContainer.src = videos[index];
-			videoContainer.load();
-			currentVideoIndex = index;
-		}
-
-		function prevVideo() {
-			if (currentVideoIndex > 0) {
-				currentVideoIndex--;
-			} else {
-				currentVideoIndex = videos.length - 1;
-			}
-			showVideo(currentVideoIndex);
-		}
-
-		function nextVideo() {
-			if (currentVideoIndex < videos.length - 1) {
-				currentVideoIndex++;
-			} else {
-				currentVideoIndex = 0;
-			}
-			showVideo(currentVideoIndex);
-		}
-		showVideo(currentVideoIndex);
-		*/
-// trỏ
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
-
-        tooltipTriggers.forEach(trigger => {
-            trigger.addEventListener("mouseenter", function() {
-                const tooltipContent = this.nextElementSibling;
-                tooltipContent.classList.add("show");
-            });
-
-            trigger.addEventListener("mouseleave", function() {
-                const tooltipContent = this.nextElementSibling;
-                tooltipContent.classList.remove("show");
-            });
-
-            trigger.addEventListener("click", function(event) {
-                event.preventDefault(); // Prevent default link behavior
-            });
+        trigger.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
         });
     });
-</script>
-<script>
+
+    // Navbar scroll
     let lastScrollTop = 0;
     const navbar = document.getElementById("navbar");
 
@@ -90,14 +33,53 @@
 
         lastScrollTop = scrollTop;
     });
-</script>
-// Giỏ hàng
-const cart = document.getElementById('cart');
-const closeCartBtn = document.getElementById('close-cart');
-document.getElementById('cart-icon').addEventListener('click', function() {
-    cart.style.display = 'block';
-});
 
-closeCartBtn.addEventListener('click', function() {
-    cart.style.display = 'none';
+    // Booking form
+    const form = document.getElementById("booking-form");
+    const serviceResults = document.getElementById("service-results");
+    const selectedServicesList = document.getElementById("selected-services");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Lấy thông tin từ form
+        const fullName = document.getElementById("full-name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const checkIn = document.getElementById("check-in").value;
+        const checkOut = document.getElementById("check-out").value;
+        const roomType = document.getElementById("room-type").value;
+        const services = Array.from(document.querySelectorAll('input[name="services[]"]:checked')).map(el => el.nextElementSibling.innerText);
+
+        // Hiển thị thông tin
+        selectedServicesList.innerHTML = `
+            <li><strong>Họ và tên:</strong> ${fullName}</li>
+            <li><strong>Email:</strong> ${email}</li>
+            <li><strong>Số điện thoại:</strong> ${phone}</li>
+            <li><strong>Ngày nhận phòng:</strong> ${checkIn}</li>
+            <li><strong>Ngày trả phòng:</strong> ${checkOut}</li>
+            <li><strong>Loại phòng:</strong> ${roomType}</li>
+            <li><strong>Dịch vụ đã chọn:</strong> ${services.join(", ")}</li>
+        `;
+
+        serviceResults.style.display = "block";
+    });
+
+    // Chat box
+    function toggleChatBox() {
+        const chatBox = document.getElementById("zalo-chat-box");
+        if (chatBox.style.display === "none" || chatBox.style.display === "") {
+            chatBox.style.display = "block";
+        } else {
+            chatBox.style.display = "none";
+        }
+    }
+
+    document.getElementById('cart-icon').addEventListener('click', function() {
+        document.getElementById('cart').style.display = 'block';
+    });
+
+    document.getElementById('close-cart').addEventListener('click', function() {
+        document.getElementById('cart').style.display = 'none';
+    });
 });
