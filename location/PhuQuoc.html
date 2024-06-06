@@ -71,7 +71,100 @@
 <div class="divL">
 </div>
 <div class="divM">
-<p>PhuQuoc</p>
+	<div>
+		<h1>Dịch vụ Du lịch Phú Quốc</h1>
+		<div class="container">
+		<div class ="divT">
+			<div class="item">
+				<img src="IMG/phuquoc.jpg" alt="Phú Quốc" width="500px" height="300px">
+			</div>
+			<div class="introduction-section">				
+				<div class="introduction-content">
+					<h1>Chào Mừng Đến Với Phú Quốc</h1>
+					<ul>
+					<li>
+						
+Phú Quốc - Đảo ngọc Việt Nam
+Phú Quốc là một hòn đảo lớn nhất Việt Nam, thuộc tỉnh Kiên Giang, nằm trong vịnh Thái Lan. Nơi đây được mệnh danh là "đảo ngọc" với những bãi biển hoang sơ, bờ cát trắng mịn trải dài, nước biển xanh ngọc bích và những khu rừng nguyên sinh hùng vĩ. Phú Quốc đã được UNESCO công nhận là Khu dự trữ sinh quyển thế giới vào năm 2005.
+					</li>
+					<li>
+						Phúc Quốc luôn chào đón du khách đến với thành phố của mình với những giá trị văn hóa, lịch sử và con người độc đáo.
+					</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class = "divT">
+	<div class="section">
+		<h2>Đặt phòng và dịch vụ</h2>
+		<p>
+			Vui lòng điền thông tin của bạn vào form dưới đây để đặt phòng và chọn các dịch vụ tại Hạ Long.
+		</p>
+		<div class="booking-box">
+			<form id="booking-form" action="process_booking.php" method="post">
+				<label for="full-name">Họ và tên:</label>
+				<input type="text" id="full-name" name="full-name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Số điện thoại:</label>
+				<input type="tel" id="phone" name="phone" required>
+
+				<label for="check-in">Ngày nhận phòng:</label>
+				<input type="date" id="check-in" name="check-in" required>
+
+				<label for="check-out">Ngày trả phòng:</label>
+				<input type="date" id="check-out" name="check-out" required>
+
+				<label for="room-type">Loại phòng:</label>
+				<select id="room-type" name="room-type" required>
+					<option value="standard">Phòng tiêu chuẩn</option>
+					<option value="deluxe">Phòng cao cấp</option>
+					<option value="suite">Suite</option>
+				</select>
+				<fieldset>
+					<legend>Chọn các dịch vụ</legend>
+					<input type="checkbox" id="service1" name="services[]" value="service1">
+					<label for="service1">Di chuyển</label><br>
+					<input type="checkbox" id="service2" name="services[]" value="service2">
+					<label for="service2">Ăn uống</label><br>
+					<input type="checkbox" id="service3" name="services[]" value="service3">
+					<label for="service3">Giải trí</label><br>
+				</fieldset>
+				<button type="submit">Gửi yêu cầu</button>
+			</form>
+			<div id="service-results" style="display: none;">
+				<h3>Kết quả đặt dịch vụ:</h3>
+				<ul id="selected-services"></ul>
+			</div>
+		</div>
+	</div>
+<div>
+	<div class="item">
+<h3>Phòng được thiết kế theo phong cách hiện đại </h3>
+<button class="prev">&#10094;</button>
+<img src="IMG/phuquoc1.jpg" alt="Khách sạn 5 sao" width ="500px" height = "300px">
+<img src="IMG/phuquoc2.jpg" alt="Phòng 5 sao"width ="500px" height = "300px">
+<button class="next">&#10095;</button>
+</div>
+	<div class = "item">
+		<h3> Dịch vụ ăn uống hàng đầu Việt Nam</h3>
+		<img src ="IMG/phuquoc3.jpg" alt="Sảnh ăn" width ="500px" height = "300px">
+	</div>
+	</div>
+</div>
+	<div>
+		<h2>Đánh giá</h2>
+		<p>
+			Đọc các đánh giá từ khách hàng trước đây và chia sẻ trải nghiệm của bạn sau khi du lịch Hạ Long.
+		</p>
+		<div class="reviews">
+		</div>
+	</div>
+</div>
 </div>
 <div class="divR">
 </div>
