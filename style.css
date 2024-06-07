@@ -34,6 +34,7 @@ main {
 /* Layout */
 .divT {
     display: flex;
+    flex-direction: column;
 }
 
 .divM {
@@ -374,4 +375,121 @@ h1 {
     margin-top: 50px;
     font-size: 14px;
     color: #777;
+}
+
+/* Định nghĩa bố cục chính cho container chứa các slide */
+#bd1 {
+    position: relative;
+    width: 100%; /* Tăng độ rộng để các hình ảnh không bị cắt */
+    height: 50vw;
+    transform-style: preserve-3d;
+    font-family: 'Times New Roman', Times, serif;
+    perspective: 1400px; /* Đặt phối cảnh cho container */
+}
+
+/* Định dạng cho các nút radio */
+input[type="radio"] {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 15px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: aqua;
+    opacity: 0.4;
+}
+
+/* Đổi độ mờ khi nút radio được chọn */
+input[type="radio"]:checked {
+    opacity: 1;
+}
+
+/* Định dạng cho các slide và hình ảnh bên trong */
+#bd1 label,
+#bd1 label img {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    width: 300px; /* Giảm kích thước để phù hợp với không gian */
+    height: 400px; /* Giảm kích thước để phù hợp với không gian */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Khi một nút radio được chọn, slide tương ứng sẽ hiển thị ở vị trí chính giữa */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5,
+#s6:checked ~ #slide6,
+#s7:checked ~ #slide7,
+#s8:checked ~ #slide8,
+#s9:checked ~ #slide9 {
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 2;
+}
+
+/* Các slide tiếp theo sẽ được hiển thị bên phải */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide6,
+#s6:checked ~ #slide7,
+#s7:checked ~ #slide8,
+#s8:checked ~ #slide9,
+#s9:checked ~ #slide1 {
+    transform: translate(30%, -50%) scale(0.8);
+    z-index: 1;
+}
+
+/* Các slide trước sẽ được hiển thị bên trái */
+#s1:checked ~ #slide9,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4,
+#s6:checked ~ #slide5,
+#s7:checked ~ #slide6,
+#s8:checked ~ #slide7,
+#s9:checked ~ #slide8 {
+    transform: translate(-130%, -50%) scale(0.8);
+    z-index: 1;
+}
+
+/* Các slide tiếp theo sẽ có chiều sâu giảm dần */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide6,
+#s5:checked ~ #slide7,
+#s6:checked ~ #slide8,
+#s7:checked ~ #slide9,
+#s8:checked ~ #slide1,
+#s9:checked ~ #slide2 {
+    transform: translate(80%, -50%) scale(0.6);
+    z-index: 0;
+}
+
+/* Các slide trước sẽ có chiều sâu giảm dần */
+#s1:checked ~ #slide8,
+#s2:checked ~ #slide9,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3,
+#s6:checked ~ #slide4,
+#s7:checked ~ #slide5,
+#s8:checked ~ #slide6,
+#s9:checked ~ #slide7 {
+    transform: translate(-180%, -50%) scale(0.6);
+    z-index: 0;
 }
