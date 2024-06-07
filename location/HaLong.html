@@ -85,6 +85,7 @@
 							</ul>
 						</div>
 					</div>
+					
 					</div>
                 </div>
             </div>
@@ -137,10 +138,14 @@
 		<div>
 			<div class="item">
   <h3>Phòng được thiết kế theo phong cách châu Âu</h3>
-    <button class="prev">&#10094;</button>
-    <img src="IMG/imgRoom1.jpg" alt="Phòng 5 sao" width ="500px" height = "300px">
-    <img src="IMG/imgroom2.jpg" alt="Phòng 5 sao"width ="500px" height = "300px">
-    <button class="next">&#10095;</button>
+    <div class="slider-container">
+    <img class="slides active" src="IMG/imgHaLong.jpg" style="width:100%">
+    <img class="slides" src="IMG/imgNinhBinh.jpg" style="width:100%">
+    <img class="slides" src="IMG/imgSapa.jpg" style="width:100%">
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
 </div>
 			<div class = "item">
 				<h3> Dịch vụ ăn uống hàng đầu Việt Nam</h3>
@@ -230,6 +235,7 @@
         </div>
     </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
