@@ -106,7 +106,10 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
 }
-
+.container1 {
+    position: relative;
+    width: 100%;
+        }
 .item {
     margin-left: 10px;
     margin-right: 10px;
@@ -234,7 +237,16 @@ nav a:hover {
 			object-fit: cover;
 		    border-radius : 10px;
 }
-
+		.text {
+            position: absolute;
+            top: 90%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black; 
+            font-size: 12px; 
+            background-color: #CCFFFF; 
+            padding: 10px; 
+        }
         .slider-container {
             position: relative;
             max-width: 600px;
