@@ -1,116 +1,329 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dịch Vụ Du Lịch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<script type="text/javascript" src="./javascripts/script.js"></script>
-<header id="navbar">
-<div style=" background-color: #32ABD6;">
-    <div class="logo">
-        <i class="fa-brands fa-swift"></i> Ngao Du VI EN
+ <header id="navbar">
+        <div style=" background-color: #32ABD6;">
+            <div style=" background-color: #0000BB;">
+                <div class="logo">
+                    <i class="fa-brands fa-swift"></i> Ngao Du VI EN
+        </div>
     </div>
-</div>
-<div>
-    <nav>
-		<div><h3><a href="../index.html">Trang chủ</a></h3></div>
-        <div class="tooltip-container">
-			<span class="tooltip-trigger"><h3>Địa điểm hot!</h3></span>
-			<div class="tooltip-content">   
-<ol>
-			<li><a href="../location/HaLong.html">Hạ Long Bay</a></li>
-			<li><a href="../location/Sapa.html">Sapa</a></li>
-			<li><a href="../location/HoiAn.html">Đà Nẵng - Hội An</a></li>
-			<li><a href="../location/PhuQuoc.html">Phú Quốc</a></li>
-			<li><a href="../location/Hue.html">Huế</a></li>
-			<li><a href="../location/NinhBinh.html">Ninh Bình</a></li>	
-	</ol>   
+    <div>
+        <nav>
+            <div class="item"><h3><a href="../index.html">Trang chủ</a></h3></div>
+			<div class = "item">
+            <div class="tooltip-container">
+                <span class="tooltip-trigger"><h3>Địa điểm </h3></span>
+                <div class="tooltip-content">   
+                    <ol>
+                        <li><a href="../location/HaLong.html">Hạ Long Bay</a></li>
+                        <li><a href="../location/Sapa.html">Sapa</a></li>
+                        <li><a href="../location/HoiAn.html">Đà Nẵng - Hội An</a></li>
+                        <li><a href="../location/PhuQuoc.html">Phú Quốc</a></li>
+                        <li><a href="../location/Hue.html">Huế</a></li>
+                        <li><a href="../location/NinhBinh.html">Ninh Bình</a></li>   
+                    </ol>
+                </div>
+            </div>
 			</div>
+			<div class ="item">
+            <div class="tooltip-container">
+                <span class="tooltip-trigger"><h3>Dịch vụ</h3></span>
+                <div class="tooltip-content">   
+                    <ol>
+                        <li><a href="../service/DiChuyen.html">Phương tiện</a></li>
+                        <li><a href="../service/AnUong.html">Nhà hàng</a></li>
+                        <li><a href="../service/NguNghi.html">Khách sạn</a></li>
+                        <li><a href="../service/VuiChoi.html">Vui chơi</a></li>
+                        <li><a href="../service/ChupAnh.html">Chụp ảnh</a></li>
+                        <li><a href="../service/HDV.html">Hướng dẫn viên</a></li>  
+                    </ol>
+                </div>
+            </div>
 			</div>
-		
-		<div class="tooltip-container">
-			<span class="tooltip-trigger"><h3>Dịch vụ</h3></span>
-			<div class="tooltip-content">   
-    
-	<ol>
-			<li><a href="service/DiChuyen.html">Di chuyển</a></li>
-			<li><a href="service/AnUong.html">Ăn uống</a></li>
-			<li><a href="service/NguNghi.html">Ngủ nghỉ</a></li>
-			<li><a href="service/VuiChoi.html">Vui chơi</a></li>
-			<li><a href="service/ChupAnh.html">Chụp ảnh</a></li>
-			<li><a href="service/HDV.html">Hướng dẫn viên</a></li>	
-	</ol> 
+            <div class="item"><h3><a href="../intro/intro.html">Giới thiệu</a></h3></div>
+            <div class ="item">
+			<div class="tooltip-container">
+                <div class="tooltip-trigger"><h3>Liên hệ</h3></div>
+                <div class="tooltip-content">   
+                    <ol>
+                        <li><a href="../lienhe/DatLich.html">Đặt lịch</a></li>
+                        <li><a href="../lienhe/GopY.html">Góp ý</a></li>
+                    </ol>  
+                </div>
+            </div>
 			</div>
-			</div>
-		<div><h3><a href="../intro/intro.html">Giới thiệu</a></h3></div>
-         <div class="tooltip-container">
-			<div  class="item"><div class="tooltip-trigger"><h3>Liên hệ</h3></div></div>
-			<div class="tooltip-content">   
-    
-	<ol>
-			<li><a href="../lienhe/DatLich.html">Đặt lịch</a></li>
-			<li><a href="../lienhe/GopY.html">Góp ý</a></li>
-	
-	</ol>
-	
-	
-            
-			</div>
-			</div>
-		<div><h3><a href="#khuyenmai">Khuyến mại</a></h3></div>
-	</nav>
-</div>
-<div class="search-container">
-    <input type="text" placeholder="Tìm kiếm...">
-    <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
-</div>
+            <div class="item"><h3><a href="#khuyenmai">Khuyến mại</a></h3></div>
+        </nav>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+    </div>
 </header>
+    <div class="slide-show">
+        <div class="list-images">
+
+            <img src="https://images3.alphacoders.com/106/1069102.jpg" width="100%" alt="">
+
+        </div>
+
+        <script src="./index.js"></script>
 <main>
-<div class="divT">
-<div class="divL">
-</div>
-<div class="divM">
-<p>VuiChoi</p>
-</div>
-<div class="divR">
-</div>
-</div>
-<footer>
-     <div class="contact-bar">
-            <div class="contact-item">
-			<img src="IMG/imgPhone.jpg" alt="Phone">
-                <span style="color:#0000FF">999 999 999</span>
+    <div class="divTT">
+        <div class="divL">
+        </div>
+        <div id="bd1">
+            <input type="radio" name="bd1" id="s1" checked>
+            <input type="radio" name="bd1" id="s2" checked>
+            <input type="radio" name="bd1" id="s3" checked>
+            <input type="radio" name="bd1" id="s4" checked>
+            <input type="radio" name="bd1" id="s5" checked>
+            <input type="radio" name="bd1" id="s6" checked>
+            <input type="radio" name="bd1" id="s7" checked>
+            <input type="radio" name="bd1" id="s8" checked>
+            <input type="radio" name="bd1" id="s9" checked>
+            <label for="s1" id="slide1">
+                <img src="IMG/diem1.jpg" alt="">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="IMG/diem2.jpg" alt="">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="IMG/diem3.jpg" alt="">
+            </label>
+            <label for="s4" id="slide4">
+                <img src="IMG/diem5.jpg" alt="">
+            </label>
+            <label for="s5" id="slide5">
+                <img src="IMG/diem4.jpg" alt="">
+            </label>
+            <label for="s6" id="slide6">
+                <img src="IMG/diem6.jpg" alt="">
+            </label>
+            <label for="s7" id="slide7">
+                <img src="IMG/Quy Nhon.jpg" alt="">
+            </label>
+            <label for="s8" id="slide8">
+                <img src="IMG/diem8.jpg" alt="">
+            </label>
+            <label for="s9" id="slide9">
+                <img src="IMG/diem9.jpg" alt="">
+            </label>
+        </div>
+    </div>
+</main>
+                <div class="divM">
+                    <div id="diadiemhot">
+                        <h1 style="background-color:#f4f2f2;">Những địa điểm thu hút khách du lịch bậc nhất tại Việt Nam!</h1>
+                        <div class="container1">
+                            <div class="title">
+                                <h1>TOUR NỔI BẬT</h1>
+
+                                <div class="underline">
+                                    <span class="diamond"></span>
+                                </div>
+                            </div>
+                            <div class="tour-grid">
+                                <div class="tour-card">
+                                    <img src="IMG/diem1.jpg" alt="Tour Du Lịch Nghỉ Dưỡng" class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>Tour Châu Âu Mùa Thu 5 Tỉnh Việt Nam (Quảng Ninh - Nha Trang - Hải Phòng -
+                                            Ninh Bình - Hòa Bình)</h3>
+                                        <p>11 ngày 10 đêm</p>
+                                        <p class="price">65.990.000 VNĐ</p>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="IMG/DaNang.jpg" alt="Tour Du Lịch Đà Nẵng" class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>Tour Du Lịch Thành Phố Đà Nẵng Tết Âm Lịch 2024 (Khám Phá Ba Na Hills)</h3>
+                                        <p>7 ngày 6 đêm</p>
+                                        <p class="price">20.490.000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tour-grid">
+                                <div class="tour-card">
+                                    <img src="IMG/Quy Nhon.jpg" alt="Tour Du Lịch Nghỉ Dưỡng" class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>ComBo Tour Quy Nhơn Mùa Thu 2024 (Tham Quan Kỳ Co, Eo Gió, Hòn Khô v..v)
+                                        </h3>
+                                        <p>11 ngày 10 đêm</p>
+                                        <p class="price">35.990.000 VNĐ</p>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="IMG/Dong nai.jpg" alt="Tour Du Lịch Đêm " class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>ComBo Lung Linh Cắm Trại Tham Quan Tại Hồ Trị An (Đồng Nai) </h3>
+                                        <p>3 ngày 2 đêm</p>
+                                        <p class="price">10.490.000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tour-grid">
+                                <div class="tour-card">
+                                    <img src="IMG/Hoi An.jpg" alt="Tour Du Lịch Hội An" class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>Tour ComBo Du Lịch Khám Phá Phố Cổ Hội An 2024 (Free & Easy) </h3>
+                                        <p>5 ngày 4 đêm</p>
+                                        <p class="price">20.990.000 VNĐ</p>
+                                    </div>
+                                </div>
+                                <div class="tour-card">
+                                    <img src="IMG/diem5.jpg" alt="Tour Du Lịch Thủ Đô Hà Nội" class="tour-image">
+                                    <div class="tour-content">
+                                        <h3>Tour Du Lịch Phố Cổ Hà Nội (Lăng Chủ Tịch, Văn Miếu Quốc Tử Giám v..v)  </h3>
+                                        <p>3 ngày 2 đêm</p>
+                                        <p class="price">8.490.000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-			<img src="IMG/imgMail.jpg">
-                <span style="color:#0000FF">meo meo.com</span>
+            <div id="dichvu">
             </div>
-            <div class="contact-item">
-			<img src="IMG/imgArea.jpg">
-                <span style="color:#0000FF">thiên đình</span>
+
+    </div>
+    <div id="gioithieu">
+        <p></p>
+    </div>
+    <div id="lienhe">
+
+    </div>
+
+    <div id="khuyenmai">
+	<h1 style="background-color:#f4f2f2;">Khuyến mãi dành cho bạn</h1>
+	<div class = "divT">
+	<div class="khuyenmai">
+      <div class="km">
+        <img src="IMG/km.jpg" alt="lỗi">
+        <a href="" >Khuyến mãi mùa hè này</a>
+    </div>
+    </div>
+		<div class="khuyenmai">
+      <div class="km">
+        <img src="IMG/km1.jpg" alt="lỗi">
+        <a href="" >Khuyến mãi mùa thu này</a>
+    </div>
+    </div>
+		<div class="khuyenmai">
+      <div class="km">
+        <img src="IMG/km2.jpg" alt="lỗi">
+        <a href="" >Khuyến mãi hôm nay</a>
+    </div>
+    </div>
+		<div class="khuyenmai">
+      <div class="km">
+        <img src="IMG/km3.jpg" alt="lỗi">
+        <a href="" >Khuyến mãi sốc</a>
+    </div>
+    </div>
+	</div>
+    <div class="divR">
+    </div>
+    </div>
+    <!--boxchat-->
+    <div id="chat-bubble" onclick="toggleChatBox()">
+        <img src="IMG/Zalo.jpg" alt="Zalo Icon">
+    </div>
+
+    <div id="zalo-chat-box">
+        <div class="chat-box-header">
+            Zalo Chat
+            <button onclick="toggleChatBox()">x</button>
+        </div>
+        <div class="chat-box-content">
+
+            <p>Chat Zalo!</p>
+        </div>
+    </div>
+<div class = "footer">
+    <footer id="colophon" class="site-footer">
+    <div class="pix-container">
+        <div class="footer-border-top"></div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <div class="footer-widget-title">NGAO DU VI EN</div>
+                    <div class="footer-widget-content">
+                        <div class="be"><strong>Địa chỉ</strong>: Số 1 Đường Giải Phóng, Quận Hoàng Mai, Hà Nội</div>
+                        <div class="be"><strong>Văn phòng khác</strong>: 105A6 Trường Đại học Phenikaa</div>
+                        <div class="be"><strong>Điện thoại</strong>: 0559 446 557</div>
+                        <div class="be">Hotline/ CSKH :<span style="color: #ff0000;"> <a style="color: #ff0000;" >055 555 559 &#8211; 098 888 999 </a></span></div>
+                        <div class="be"><strong>Website</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">www.NgaoDuViEn.vn</a></div>
+                        <div class="be"><strong>Email</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">NgaoDuViEn.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                <div class="footer-widget widget-menu widget-menu-0">
+                    <div class="footer-widget-title"> CHĂM SÓC KHÁCH HÀNG</div>
+                    <div class="footer-widget-content">
+                        <ul>
+                            <li><a href="#">Thẻ khách hàng</a></li>
+                            <li><a href="#">Voucher Du Lịch</a></li>
+                            <li>Phiếu đánh giá dịch vụ</li>
+                            <li>Điều khoản bảo mật</li>
+                            <li>Chính sách hoàn/huỷ dịch vụ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <div class="footer-widget-title">Cập nhật thông tin khuyến mãi </div>
+                    <div class="footer-widget-content">
+                        <p>Quý khách vui lòng nhập email để chúng tôi cập nhật tới Quý Khách các chương trình khuyến mãi thường xuyên</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-socials-network widget-socials-network-0">
+                    <div class="footer-widget-title">Kết nối với chúng tôi</div>
+                    <div class="footer-widget-content">
+                        <ul class="socials-network">
+                            <li>
+                                <a href="https://www.facebook.com/ngtiensdat" target="_blank">
+                                    <img src="IMG/Face.jpg" alt="Facebook" style="width: 40px; height: 40px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-</main>
-<script>
-    let lastScrollTop = 0;
-    const navbar = document.getElementById("navbar");
+<div class="copyright">
+            <div class="footer1">Copyright © 2024 <strong> NgaoDu ViEN</strong></div>
+        </div>
+</div>
+    <script src="script.js"></script>
 
-    window.addEventListener("scroll", function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollTop > lastScrollTop) {
-            navbar.style.top = "-50px";
-        } else {
-            navbar.style.top = "0";
-        }
-
-        lastScrollTop = scrollTop;
-    });
-</script>
+    </main>
 </body>
-</html>

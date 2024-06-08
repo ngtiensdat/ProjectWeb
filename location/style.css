@@ -31,7 +31,19 @@ header {
 main {
     padding-top:200px; 
 }
-
+/* Header */
+header {
+    width: 100%;
+    background-color: #ADD8E6;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+	background-image: url("IMG/head.jpg");
+}
 /* Layout */
 .divT {
     display: flex;
@@ -323,8 +335,14 @@ h1 {
 }
 
 /* Chân */
+.footer {
+	background-image: url("IMG/footer.jpg");
+}
+.footer1 {
+	background-color: black;
+	text-align: center;
+}
 .site-footer {
-    background-color: #ffffff;
     padding: 50px 0;
 }
 
@@ -426,4 +444,102 @@ h1 {
 
 .booking-box button:hover {
     background-color: #4CAF50;
+}
+/* Zalo Chat */
+#chat-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#chat-bubble img {
+    width: 50px;
+    height: 50px; 
+}
+
+#zalo-chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+#zalo-chat-box .chat-box-header {
+    background-color: #0078FF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#zalo-chat-box .chat-box-header button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#zalo-chat-box .chat-box-content {
+    padding: 10px;
+}
+/* Contact Section */
+.lienhe {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Chân */
+.footer {
+	background-image: url("IMG/footer.jpg");
+}
+.footer1 {
+	background-color: black;
+	text-align: center;
+}
+.site-footer {
+    padding: 50px 0;
+}
+
+.pix-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.col-lg-5, .col-lg-2, .col-lg-3 {
+    width: calc((100% - 60px) / 4); 
+    margin-right: 20px;
+}
+
+.col-lg-5 {
+    width: calc(((100% - 60px) / 4) * 5 + 20px);
+}
+
+.footer-widget {
+    margin-bottom: 20px;
+}
+
+.footer-widget-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-widget-content {
+    font-size: 14px;
 }

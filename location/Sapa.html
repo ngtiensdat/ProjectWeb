@@ -9,10 +9,11 @@
 </head>
 <body>
 <script type="text/javascript" src="./javascripts/script.js"></script>
-<header id="navbar">
-    <div style="background-color: #32ABD6;">
-        <div class="logo">
-            <i class="fa-brands fa-swift"></i> Ngao Du VI EN
+ <header id="navbar">
+        <div style=" background-color: #32ABD6;">
+            <div style=" background-color: #0000BB;">
+                <div class="logo">
+                    <i class="fa-brands fa-swift"></i> Ngao Du VI EN
         </div>
     </div>
     <div>
@@ -173,76 +174,93 @@
 			<div class="divR"></div>
 		</div>
 	</main>
-	<footer id="colophon" class="site-footer">
-		<div class="pix-container">
-			<div class="footer-border-top"></div>
-			<div class="row">
-				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-					<div class="footer-widget widget-text widget-text-0">
-						<div class="footer-widget-title">NGAO DU VI EN</div>
-						<div class="footer-widget-content">
-							<div class="be"><strong>Địa chỉ</strong>: Số 1 Đường Giải Phóng, Quận Hoàng Mai, Hà Nội</div>
-							<div class="be"><strong>Văn phòng khác</strong>: 105A6 Trường Đại học Phenikaa</div>
-							<div class="be"><strong>Điện thoại</strong>: 0559 446 557</div>
-							<div class="be">Hotline/ CSKH :<span style="color: #ff0000;"> <a style="color: #ff0000;" >055 555 559 &#8211; 098 888 999 </a></span></div>
-							<div class="be"><strong>Website</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">www.NgaoDuViEn.vn</a></div>
-							<div class="be"><strong>Email</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">NgaoDuViEn.com</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-					<div class="footer-widget widget-menu widget-menu-0">
-						<div class="footer-widget-title"> CHĂM SÓC KHÁCH HÀNG</div>
-						<div class="footer-widget-content">
-							<ul>
-								<li><a href="#">Thẻ khách hàng</a></li>
-								<li><a href="#">Voucher Du Lịch</a></li>
-								<li>Phiếu đánh giá dịch vụ</li>
-								<li>Điều khoản bảo mật</li>
-								<li>Chính sách hoàn/huỷ dịch vụ</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<div class="footer-widget widget-text widget-text-0">
-						<div class="footer-widget-title">Cập nhật thông tin khuyến mãi </div>
-						<div class="footer-widget-content">
-							<p>Quý khách vui lòng nhập email để chúng tôi cập nhật tới Quý Khách các chương trình khuyến mãi thường xuyên</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-					<div class="footer-widget widget-text widget-text-0">
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-					<div class="footer-widget widget-socials-network widget-socials-network-0">
-						<div class="footer-widget-title">Kết nối với chúng tôi</div>
-						<div class="footer-widget-content">
-							<ul class="socials-network">
-								<li>
-									<a href="https://www.facebook.com/ngtiensdat" target="_blank">
-										<img src="IMG/Face.jpg" alt="Facebook" style="width: 40px; height: 40px;">
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-					<div class="footer-widget widget-text widget-text-0">
-						<p>&nbsp;</p>
-					</div>
-				</div>
-			</div>
-			<div class="copyright">
-				<div class="copy">Copyright © 2024 <strong> NgaoDu ViEN</strong></div>
-			</div>
-		</div>
-	</footer>
+    <!--boxchat-->
+    <div id="chat-bubble" onclick="toggleChatBox()">
+        <img src="IMG/Zalo.jpg" alt="Zalo Icon">
+    </div>
+
+    <div id="zalo-chat-box">
+        <div class="chat-box-header">
+            Zalo Chat
+            <button onclick="toggleChatBox()">x</button>
+        </div>
+        <div class="chat-box-content">
+
+            <p>Chat Zalo!</p>
+        </div>
+    </div>
+<div class = "footer">
+    <footer id="colophon" class="site-footer">
+    <div class="pix-container">
+        <div class="footer-border-top"></div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <div class="footer-widget-title">NGAO DU VI EN</div>
+                    <div class="footer-widget-content">
+                        <div class="be"><strong>Địa chỉ</strong>: Số 1 Đường Giải Phóng, Quận Hoàng Mai, Hà Nội</div>
+                        <div class="be"><strong>Văn phòng khác</strong>: 105A6 Trường Đại học Phenikaa</div>
+                        <div class="be"><strong>Điện thoại</strong>: 0559 446 557</div>
+                        <div class="be">Hotline/ CSKH :<span style="color: #ff0000;"> <a style="color: #ff0000;" >055 555 559 &#8211; 098 888 999 </a></span></div>
+                        <div class="be"><strong>Website</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">www.NgaoDuViEn.vn</a></div>
+                        <div class="be"><strong>Email</strong>: <a href="https://ngtiensdat.github.io/ProjectWeb/index.html">NgaoDuViEn.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+                <div class="footer-widget widget-menu widget-menu-0">
+                    <div class="footer-widget-title"> CHĂM SÓC KHÁCH HÀNG</div>
+                    <div class="footer-widget-content">
+                        <ul>
+                            <li><a href="#">Thẻ khách hàng</a></li>
+                            <li><a href="#">Voucher Du Lịch</a></li>
+                            <li>Phiếu đánh giá dịch vụ</li>
+                            <li>Điều khoản bảo mật</li>
+                            <li>Chính sách hoàn/huỷ dịch vụ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <div class="footer-widget-title">Cập nhật thông tin khuyến mãi </div>
+                    <div class="footer-widget-content">
+                        <p>Quý khách vui lòng nhập email để chúng tôi cập nhật tới Quý Khách các chương trình khuyến mãi thường xuyên</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-socials-network widget-socials-network-0">
+                    <div class="footer-widget-title">Kết nối với chúng tôi</div>
+                    <div class="footer-widget-content">
+                        <ul class="socials-network">
+                            <li>
+                                <a href="https://www.facebook.com/ngtiensdat" target="_blank">
+                                    <img src="IMG/Face.jpg" alt="Facebook" style="width: 40px; height: 40px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="footer-widget widget-text widget-text-0">
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+            <div class="footer1">Copyright © 2024 <strong> NgaoDu ViEN</strong></div>
+        </div>
+</div>
 	<script src="script.js"></script>
 	</body>
 	</html>

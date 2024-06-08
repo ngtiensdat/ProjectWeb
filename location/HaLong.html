@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="navbar">
-    <div style="background-color: #32ABD6;">
-        <div class="logo">
-            <i class="fa-brands fa-swift"></i> Ngao Du VI EN
+ <header id="navbar">
+        <div style=" background-color: #32ABD6;">
+            <div style=" background-color: #0000BB;">
+                <div class="logo">
+                    <i class="fa-brands fa-swift"></i> Ngao Du VI EN
         </div>
     </div>
     <div>
@@ -176,7 +177,23 @@
         <div class="divR"></div>
     </div>
 </main>
-<footer id="colophon" class="site-footer">
+    <!--boxchat-->
+    <div id="chat-bubble" onclick="toggleChatBox()">
+        <img src="IMG/Zalo.jpg" alt="Zalo Icon">
+    </div>
+
+    <div id="zalo-chat-box">
+        <div class="chat-box-header">
+            Zalo Chat
+            <button onclick="toggleChatBox()">x</button>
+        </div>
+        <div class="chat-box-content">
+
+            <p>Chat Zalo!</p>
+        </div>
+    </div>
+<div class = "footer">
+    <footer id="colophon" class="site-footer">
     <div class="pix-container">
         <div class="footer-border-top"></div>
         <div class="row">
@@ -241,12 +258,12 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <div class="copy">Copyright © 2024 <strong> NgaoDu ViEN</strong></div>
-        </div>
     </div>
 </footer>
-
+<div class="copyright">
+            <div class="footer1">Copyright © 2024 <strong> NgaoDu ViEN</strong></div>
+        </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
