@@ -34,9 +34,11 @@ main {
 /* Layout */
 .divT {
     display: flex;
+}
+.divTT {
+    display: flex;
     flex-direction: column;
 }
-
 .divM {
     padding-top: 30px;
     width: 100%;
