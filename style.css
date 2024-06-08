@@ -24,6 +24,7 @@ header {
     z-index: 1000;
     padding: 10px 0;
     text-align: center;
+	background-image: url("IMG/head.jpg");
 }
 
 /* Main */
@@ -298,8 +299,14 @@ h1 {
 }
 
 /* Chân */
+.footer {
+	background-image: url("IMG/footer.jpg");
+}
+.footer1 {
+	background-color: black;
+	text-align: center;
+}
 .site-footer {
-    background-color: #ffffff;
     padding: 50px 0;
 }
 
