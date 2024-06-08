@@ -1,40 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Tooltip
-    const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
-
-    tooltipTriggers.forEach(trigger => {
-        trigger.addEventListener("mouseenter", function() {
-            const tooltipContent = this.nextElementSibling;
-            tooltipContent.classList.add("show");
-        });
-
-        trigger.addEventListener("mouseleave", function() {
-            const tooltipContent = this.nextElementSibling;
-            tooltipContent.classList.remove("show");
-        });
-
-        trigger.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent default link behavior
-        });
-    });
-
-    // Navbar scroll
-    let lastScrollTop = 0;
-    const navbar = document.getElementById("navbar");
-
-    window.addEventListener("scroll", function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            navbar.style.top = "-50px";
-        } else {
-            navbar.style.top = "0";
-        }
-
-        lastScrollTop = scrollTop;
-    });
-
-    // Booking form
+// Booking form
     const form = document.getElementById("booking-form");
     const serviceResults = document.getElementById("service-results");
     const selectedServicesList = document.getElementById("selected-services");
@@ -65,4 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
         serviceResults.style.display = "block";
     });
 	// ảnh
+    let slideIndex = 0;
 
+    function changeSlide(n) {
+        const slides = document.getElementsByClassName('slides');
+        slides[slideIndex].classList.remove('active');
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        slides[slideIndex].classList.add('active');
+    }
