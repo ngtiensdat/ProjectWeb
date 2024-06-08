@@ -433,15 +433,10 @@ h1 {
 #bd1 {
     position: relative;
     width: 100%; /* Tăng độ rộng để các hình ảnh không bị cắt */
-    height: 35vw;
+    height: 50vw;
     transform-style: preserve-3d;
     font-family: 'Times New Roman', Times, serif;
-    perspective: 2000px; /* Đặt phối cảnh cho container */
-}
-
-#bd1 input[type="radio"]:checked + label {
-    transform: scale(1.1); /* Hiệu ứng khi nhãn được chọn */
-    opacity: 1;
+    perspective: 1400px; /* Đặt phối cảnh cho container */
 }
 
 /* Định dạng cho các nút radio */
@@ -453,7 +448,7 @@ input[type="radio"] {
     height: 10px;
     margin: 0 15px;
     transform: translateX(-50%);
-    cursor: pointer; /* Thay đổi con trỏ thành con trỏ tay khi di chuột qua */
+    cursor: pointer;
     color: aqua;
     opacity: 0.4;
 }

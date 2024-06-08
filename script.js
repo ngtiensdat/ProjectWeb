@@ -78,5 +78,3 @@ document.addEventListener("DOMContentLoaded", function() {
 			chatBox.style.display = "none";
 		});
 	});
-    
-    
