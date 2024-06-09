@@ -604,3 +604,6 @@ h1 {
 .footer-widget-content {
     font-size: 14px;
 }
+.tooltip-trigger h3{
+	font-size:28px;
+}

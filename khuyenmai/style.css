@@ -635,3 +635,6 @@ input[type="radio"]:checked {
     color: #0275d8;
 }
 
+.tooltip-trigger h3{
+	font-size:28px;
+}

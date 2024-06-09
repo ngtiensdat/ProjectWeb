@@ -634,4 +634,6 @@ input[type="radio"]:checked {
     font-weight: bold;
     color: #0275d8;
 }
-
+.tooltip-trigger h3{
+	font-size:28px;
+}
