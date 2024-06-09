@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-/* video */
-
 // trỏ
     document.addEventListener("DOMContentLoaded", function() {
         const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
