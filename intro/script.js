@@ -55,6 +55,7 @@
 		*/
 // trỏ
 <script>
+	
     document.addEventListener("DOMContentLoaded", function() {
         const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
 
@@ -74,4 +75,5 @@
             });
         });
     });
+	
 </script>
